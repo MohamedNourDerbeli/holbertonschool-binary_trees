@@ -8,7 +8,8 @@
  * in-order traversal and applies the provided function to each node's value.
  * If the tree or the function is NULL, the function does nothing.
  */
-void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int)){
+void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int))
+{
 	int n;
 
 	if (tree == NULL || func == NULL)
