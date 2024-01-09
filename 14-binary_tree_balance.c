@@ -14,7 +14,7 @@ size_t binary_tree_height(const binary_tree_t *tree)
 	dist1 = binary_tree_height(tree->left);
 	dist2 = binary_tree_height(tree->right);
 
-	if (dist1 >= dist2)
+	if (dist1 > dist2)
 		return (dist1 + 1);
 	else
 		return (dist2 + 1);
@@ -31,7 +31,7 @@ int binary_tree_balance(const binary_tree_t *tree)
 	if (tree == NULL)
 		return (0);
 
-	ri_ght = binary_tree_height(tree->right);
 	le_ft = binary_tree_height(tree->left);
-	return (ri_ght - le_ft);
+	ri_ght = binary_tree_height(tree->right);
+	return (le_ft - ri_ght);
 }
