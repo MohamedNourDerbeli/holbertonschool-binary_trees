@@ -1,5 +1,4 @@
 
-```markdown
 # Binary Tree Project
 
 This project implements various operations on binary trees in C.
